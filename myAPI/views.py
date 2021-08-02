@@ -196,12 +196,12 @@ def send_otp(mobile, name, otp):
     # return None
 
     # twilio
-    account_sid = 'AC85f2001e8ebb3f8bf4688e1a5cc5184e'
-    auth_token = '3bc6057aa867ef48c8af64b6664a55eb'
+    account_sid = 'AC85f2001e8ebb3f8bf4688e1a5c*****e'
+    auth_token = '3bc6057aa867ef48c8af64b6664****b'
     client = Client(account_sid, auth_token)
 
     message = client.messages.create(
-        messaging_service_sid='MGbbceb1a00185ef587293b3e1be718ccc',
+        messaging_service_sid='MGbbceb1a00185ef587293b3e1be7*****c',
         body='Hi '+name+'. Thank you for opting this website. Your one time password is '+otp,
         to=mobile
     )
